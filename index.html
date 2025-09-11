@@ -8,11 +8,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700&family=Roboto+Mono:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-blue: #2563eb;
+            --primary-blue: #ff3377;
             --light-blue: #3b82f6;
             --sky-blue: #0ea5e9;
             --dark-blue: #1e40af;
             --accent-blue: #0369a1;
+            --accent-pink: #3ea2ff;
+            --light-pink: #f48fb1;
+            --dark-pink: #c2185b;
             --dark-bg: #0f172a;
             --darker-bg: #0a101f;
             --text-color: #f8fafc;
@@ -33,7 +36,7 @@
             overflow-x: hidden;
             background-image: 
                 radial-gradient(circle at 10% 20%, rgba(37, 99, 235, 0.1) 0%, transparent 20%),
-                radial-gradient(circle at 90% 80%, rgba(14, 165, 233, 0.1) 0%, transparent 20%);
+                radial-gradient(circle at 90% 80%, rgba(233, 30, 99, 0.1) 0%, transparent 20%);
         }
 
         /* Efecto de partículas */
@@ -67,7 +70,7 @@
             font-size: 2rem;
             font-weight: 700;
             text-transform: uppercase;
-            background: linear-gradient(45deg, var(--light-blue), var(--sky-blue));
+            background: linear-gradient(45deg, var(--light-blue), var(--accent-pink));
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
@@ -89,7 +92,7 @@
         }
 
         .nav-links a:hover {
-            color: var(--light-blue);
+            color: var(--accent-pink);
         }
 
         .nav-links a::after {
@@ -99,7 +102,7 @@
             left: 0;
             width: 0;
             height: 2px;
-            background: var(--light-blue);
+            background: linear-gradient(90deg, var(--light-blue), var(--accent-pink));
             transition: width 0.3s ease;
         }
 
@@ -140,7 +143,7 @@
             margin-bottom: 1.5rem;
             text-transform: uppercase;
             letter-spacing: 3px;
-            background: linear-gradient(45deg, var(--light-blue), var(--sky-blue), var(--primary-blue));
+            background: linear-gradient(45deg, var(--light-blue), var(--accent-pink), var(--primary-blue));
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
@@ -154,14 +157,14 @@
         }
 
         .typed-text {
-            color: var(--sky-blue);
+            color: var(--accent-pink);
             font-weight: bold;
         }
 
         .hero-btn {
             display: inline-block;
             padding: 1rem 2.5rem;
-            background: linear-gradient(45deg, var(--primary-blue), var(--dark-blue));
+            background: linear-gradient(45deg, var(--primary-blue), var(--accent-pink));
             color: white;
             border: none;
             border-radius: 50px;
@@ -178,7 +181,8 @@
 
         .hero-btn:hover {
             transform: translateY(-5px);
-            box-shadow: 0 0 25px rgba(37, 99, 235, 0.7);
+            box-shadow: 0 0 25px rgba(233, 30, 99, 0.7);
+            background: linear-gradient(45deg, var(--accent-pink), var(--primary-blue));
         }
 
         /* Secciones */
@@ -187,7 +191,7 @@
             text-align: center;
             margin-bottom: 3rem;
             text-transform: uppercase;
-            background: linear-gradient(45deg, var(--light-blue), var(--sky-blue));
+            background: linear-gradient(45deg, var(--light-blue), var(--accent-pink));
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
@@ -204,7 +208,7 @@
             left: 0;
             width: 100%;
             height: 3px;
-            background: linear-gradient(45deg, var(--light-blue), var(--sky-blue));
+            background: linear-gradient(45deg, var(--light-blue), var(--accent-pink));
             border-radius: 3px;
         }
 
@@ -227,6 +231,23 @@
             position: relative;
         }
 
+        .profile-img::after {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            border-radius: 50%;
+            border: 2px solid var(--accent-pink);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .profile-img:hover::after {
+            opacity: 1;
+        }
+
         .profile-img img {
             width: 100%;
             height: 100%;
@@ -246,7 +267,7 @@
         .about-text h3 {
             font-size: 1.8rem;
             margin-bottom: 1rem;
-            color: var(--sky-blue);
+            color: var(--accent-pink);
         }
 
         .info-grid {
@@ -269,15 +290,15 @@
 
         .info-item:hover {
             transform: translateY(-5px);
-            border: 1px solid var(--light-blue);
-            box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
+            border: 1px solid var(--accent-pink);
+            box-shadow: 0 0 15px rgba(233, 30, 99, 0.3);
         }
 
         .info-item::before {
             content: '';
             position: absolute;
             top: -2px; left: -2px; right: -2px; bottom: -2px;
-            background: linear-gradient(45deg, var(--light-blue), var(--sky-blue), var(--primary-blue));
+            background: linear-gradient(45deg, var(--light-blue), var(--accent-pink));
             z-index: -1;
             border-radius: 10px;
             opacity: 0;
@@ -290,7 +311,7 @@
 
         .info-item i {
             font-size: 2rem;
-            color: var(--light-blue);
+            color: var(--accent-pink);
             margin-bottom: 1rem;
         }
 
@@ -307,10 +328,17 @@
             border-radius: 15px;
             padding: 2rem;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            border: 1px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .skill-category:hover {
+            border: 1px solid var(--accent-pink);
+            box-shadow: 0 5px 20px rgba(233, 30, 99, 0.2);
         }
 
         .skill-category h3 {
-            color: var(--sky-blue);
+            color: var(--accent-pink);
             margin-bottom: 1.5rem;
             font-size: 1.5rem;
             text-align: center;
@@ -336,7 +364,7 @@
         .skill-progress {
             height: 100%;
             border-radius: 5px;
-            background: linear-gradient(90deg, var(--light-blue), var(--sky-blue));
+            background: linear-gradient(90deg, var(--light-blue), var(--accent-pink));
             position: relative;
             width: 0;
             transition: width 1s ease-in-out;
@@ -356,16 +384,18 @@
             border-radius: 15px;
             text-align: center;
             transition: transform 0.3s ease;
+            border: 1px solid transparent;
         }
 
         .soft-skill-item:hover {
             transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(59, 130, 246, 0.2);
+            border: 1px solid var(--accent-pink);
+            box-shadow: 0 5px 20px rgba(233, 30, 99, 0.2);
         }
 
         .soft-skill-item i {
             font-size: 3rem;
-            color: var(--light-blue);
+            color: var(--accent-pink);
             margin-bottom: 1rem;
         }
 
@@ -399,9 +429,9 @@
         }
 
         .social-links a:hover {
-            background: var(--light-blue);
+            background: var(--accent-pink);
             transform: translateY(-5px);
-            box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+            box-shadow: 0 0 15px rgba(233, 30, 99, 0.5);
         }
 
         .copyright {
@@ -418,6 +448,24 @@
             overflow: hidden;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
             border: 2px solid var(--light-blue);
+            position: relative;
+        }
+
+        .page-image::after {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            border-radius: 15px;
+            border: 2px solid var(--accent-pink);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .page-image:hover::after {
+            opacity: 0.7;
         }
 
         .page-image img {
@@ -490,7 +538,7 @@
         
         <!-- Imagen de anime para la página de inicio -->
         <div class="page-image">
-            <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Anime de programación">
+            <img src="https://i.pinimg.com/736x/aa/98/4d/aa984df5a8ce94689588b835a8754fd4.jpg" alt="Programación">
         </div>
     </section>
 
@@ -499,7 +547,7 @@
         <h2 class="section-title">Sobre Mí</h2>
         <div class="about-content">
             <div class="profile-img">
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Nakazu">
+                <img src="yo.png" alt="Nakazu">
             </div>
             <div class="about-text">
                 <h3>Hola, soy Juan Ben Hur Pacheco Huaman</h3>
@@ -543,7 +591,7 @@
         
         <!-- Imagen para la página sobre mí -->
         <div class="page-image">
-            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Desarrollo web">
+            <img src="https://i.pinimg.com/736x/54/a2/0f/54a20f57f4a5dc18cf1f64ac339d0b3f.jpg" alt="Desarrollo web">
         </div>
     </section>
 
@@ -674,7 +722,7 @@
         
         <!-- Imagen para la página de conocimientos -->
         <div class="page-image">
-            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80" alt="Lenguajes de programación">
+            <img src="https://i.pinimg.com/736x/24/8a/97/248a97cfa9f7e71956c5b0d3b719364d.jpg" alt="Lenguajes de programación">
         </div>
     </section>
 
@@ -690,7 +738,7 @@
             <div class="soft-skill-item">
                 <i class="fas fa-users"></i>
                 <h3>Trabajo en Equipo</h3>
-                <p>Experiencia colaborando en proyectos grupales, respetando ideas y contribuyendo al objetivo común.</p>
+                <p>Experiencia colaborando en proyectos gruales, respetando ideas y contribuyendo al objetivo común.</p>
             </div>
             <div class="soft-skill-item">
                 <i class="fas fa-lightbulb"></i>
@@ -716,16 +764,15 @@
         
         <!-- Imagen para la página de habilidades blandas -->
         <div class="page-image">
-            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="Trabajo en equipo">
+            <img src="https://i.pinimg.com/736x/50/9d/cf/509dcfecb93e028264624c56752c91dc.jpg" alt="Trabajo en equipo">
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <div class="social-links">
-            <a href="#"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/Mukotzu-Nagatzuki/Juan-Pacheco"><i class="fab fa-github"></i></a>
+            <a href="https://www.facebook.com/juanbenhur.pachecohuaman"><i class="fab fa-facebook"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
         </div>
         <p class="copyright">&copy; 2023 Nakazu. Todos los derechos reservados.</p>
@@ -746,7 +793,7 @@
                     line_linked: {
                         enable: true,
                         distance: 150,
-                        color: "#0ea5e9",
+                        color: "#e91e63",
                         opacity: 0.4,
                         width: 1
                     },
