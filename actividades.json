@@ -1,0 +1,10 @@
+{
+    "actividades": [
+        {
+            "title": "Mi primera actividad",
+            "description": "Esta es una actividad de ejemplo",
+            "archivo": "mi-archivo.pdf",
+            "date": "25/01/2024"
+        }
+    ]
+}
