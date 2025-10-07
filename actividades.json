@@ -1,18 +1,19 @@
 {
     "actividades": [
         {
-            "title": "Mi primera actividad",
-            "description": "Esta es una actividad de ejemplo",
-            "archivo": "mi-archivo.pdf",
-            "date": "25/01/2024"
-        },
-        {
             "title": "semana01",
             "description": "Esta es una actividad de la semana01",
             "archivo": "semana01.pdf",
+            "date": "25/01/2024"
+        },
+        {
+            "title": "semana02",
+            "description": "Esta es una actividad de la semana02",
+            "archivo": "semana02.pdf",
             "date": "25/01/2024"
         }
     ]
 
 }
+
 
