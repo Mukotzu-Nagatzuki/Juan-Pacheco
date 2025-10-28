@@ -11,13 +11,13 @@
             "description": "Esta es una actividad de la semana02",
             "archivo": "semana2.pdf",
             "date": "25/09/2024"
-        }
+        },
         {
             "title": "semana02PAP",
             "description": "Esta es una actividad de la semana02PAP",
             "archivo": "semana2PAP.pdf",
             "date": "28/10/2024"
-        }
+        },
         {
             "title": "semana03",
             "description": "Esta es una actividad de la semana03",
@@ -27,6 +27,7 @@
     ]
 
 }
+
 
 
 
