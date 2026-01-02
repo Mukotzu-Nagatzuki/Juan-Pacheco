@@ -31,6 +31,24 @@
             "date": "28/10/2025"
         },
         {
+            "title": "semana05",
+            "description": "Esta es la actividad de la semana 05",
+            "archivo": "semana05.pdf",
+            "date": "01/01/2026"
+        },
+        {
+            "title": "semana06",
+            "description": "Esta es la actividad de la semana 06",
+            "archivo": "semana06.pdf",
+            "date": "01/01/2026"
+        },
+        {
+            "title": "semana07",
+            "description": "Esta es la actividad de la semana 07",
+            "archivo": "semana07.pdf",
+            "date": "01/01/2026"
+        },
+        {
             "title": "proyecto final",
             "description": "Esta es el proyecto final",
             "archivo": "Manual_de_usuarios_del_sistema_de_evaluacion.pdf",
@@ -39,6 +57,7 @@
     ]
 
 }
+
 
 
 
