@@ -33,19 +33,19 @@
         {
             "title": "semana05",
             "description": "Esta es la actividad de la semana 05",
-            "archivo": "semana05.pdf",
+            "archivo": "semana5.pdf",
             "date": "01/01/2026"
         },
         {
             "title": "semana06",
             "description": "Esta es la actividad de la semana 06",
-            "archivo": "semana06.pdf",
+            "archivo": "semana6.pdf",
             "date": "01/01/2026"
         },
         {
             "title": "semana07",
             "description": "Esta es la actividad de la semana 07",
-            "archivo": "semana07.pdf",
+            "archivo": "semana7.pdf",
             "date": "01/01/2026"
         },
         {
@@ -57,6 +57,7 @@
     ]
 
 }
+
 
 
 
