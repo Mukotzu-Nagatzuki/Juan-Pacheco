@@ -4,35 +4,42 @@
             "title": "semana01",
             "description": "Esta es una actividad de la semana01",
             "archivo": "semana01.pdf",
-            "date": "25/09/2024"
+            "date": "25/09/2025"
         },
         {
             "title": "semana02",
             "description": "Esta es una actividad de la semana02",
             "archivo": "semana2.pdf",
-            "date": "25/09/2024"
+            "date": "25/09/2025"
         },
         {
             "title": "semana02PAP",
             "description": "Esta es una actividad de la semana02PAP",
             "archivo": "semana2PAP.pdf",
-            "date": "28/10/2024"
+            "date": "28/10/2025"
         },
         {
             "title": "semana03",
             "description": "Esta es una actividad de la semana03",
             "archivo": "semana3.pdf",
-            "date": "28/10/2024"
+            "date": "28/10/2025"
         },
         {
             "title": "semana04",
             "description": "Esta es una actividad de la semana04",
             "archivo": "semana04.pdf",
-            "date": "28/10/2024"
+            "date": "28/10/2025"
+        },
+        {
+            "title": "proyecto final",
+            "description": "Esta es el proyecto final",
+            "archivo": "Manual_de_usuarios_del_sistema_de_evaluacion.pdf",
+            "date": "01/01/2026"
         }
     ]
 
 }
+
 
 
 
